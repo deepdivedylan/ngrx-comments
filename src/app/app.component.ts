@@ -9,7 +9,6 @@ import {ADD_TODO, DELETE_TODO, TOGGLE_DONE, UPDATE_TODO} from './reducers/todo.r
    styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-   title = 'app';
    todos$: Observable<any>;
    todo: string;
    editing = false;
