@@ -11,7 +11,7 @@ export interface Photo {
    thumbnailUrl?: string;
 }
 
-export function PhotoReducer(state = [], action: ActionWithPayload<Photo>) {
+export function photoReducer(state = [], action: ActionWithPayload<Photo>) {
    switch (action.type) {
       case ADD_PHOTO:
          return[action.payload, ...state];

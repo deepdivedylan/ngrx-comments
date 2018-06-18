@@ -4,6 +4,7 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {StoreModule} from '@ngrx/store';
+import {photoReducer} from './reducers/photo.reducer';
 import {todoReducer} from './reducers/todo.reducer';
 
 @NgModule({
@@ -13,6 +14,7 @@ import {todoReducer} from './reducers/todo.reducer';
    imports: [
       BrowserModule,
       FormsModule,
+      StoreModule.forRoot({photoReducer}),
       StoreModule.forRoot({todoReducer})
    ],
    providers: [],
